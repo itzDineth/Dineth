@@ -1,0 +1,87 @@
+/* Base styles for mobile-first design */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: #1e293b;
+  padding: 28px;
+  border-radius: 18px;
+  width: 340px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 1.6rem;
+}
+
+.links {
+  text-align: left;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #0f172a;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: 0.2s;
+  font-size: 0.95rem;
+}
+
+.link-item:hover {
+  background: #334155;
+}
+
+.link-item i {
+  width: 22px;
+  font-size: 1.2rem;
+  color: #38bdf8;
+}
+
+/* Responsive design for larger screens (tablets and desktops) */
+@media (min-width: 768px) {
+  .card {
+    width: 400px; /* Increase card width for larger screens */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Slightly larger title on tablets */
+  }
+
+  .link-item {
+    font-size: 1rem; /* Adjust link text size */
+  }
+}
+
+/* Additional styling for desktop screens */
+@media (min-width: 1024px) {
+  .card {
+    width: 480px; /* Larger card width for desktop */
+  }
+
+  h1 {
+    font-size: 2rem; /* Larger title on desktop */
+  }
+
+  .link-item {
+    font-size: 1.1rem; /* Slightly larger text for better readability */
+  }
+}
